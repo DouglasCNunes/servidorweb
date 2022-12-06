@@ -83,7 +83,7 @@ const displayCreatePost = () => {
         const insertPost = document.createElement('form')
         sectionposts.prepend(insertPost)
         insertPost.innerHTML = `
-            <textarea rows="6" cols="32" name="textContent"></textarea>
+            <textarea rows="6" cols="32" name="textContent" class="mandartexto"></textarea>
             <br> <input type="submit" value="send">`
         insertPost.addEventListener('submit', function (e) {
             e.preventDefault()

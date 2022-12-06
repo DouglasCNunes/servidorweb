@@ -13,11 +13,11 @@ const checklogin = async () => {
 const displayFormLogin = () => {
     sectionlogin.innerHTML = `
         <form>
-            <input type="text" name="username" placeholder="username" size="6">
-            <input type="password" name="password" placeholder="password" size="6">
-            <button type="submit">login</button>
+            <input type="text" name="username" placeholder="Usuario" size="6" class="inputlogin">
+            <input type="password" name="password" placeholder="Senha" size="6" class="inputlogin">
+            <button type="submit" class="buttonlogin">Fazer Login</button>
         </form>
-        <a href="">cadastre-se</a>`
+        <a href="" class="buttoncadastrase">cadastre-se</a>`
     const formlogin = sectionlogin.querySelector('form')
     formlogin.addEventListener('submit', function (evento) {
         evento.preventDefault()
@@ -32,9 +32,9 @@ function displayFormCadastro(evento) {
     evento.preventDefault()
     sectionlogin.innerHTML = `
     <form>
-        <input type="text" name="username" placeholder="username" size="6">
-        <input type="password" name="password" placeholder="password" size="6">
-        <button type="submit">cadastrar</button>
+        <input type="text" name="username" placeholder="Usuario" size="6" class="inputlogin">
+        <input type="password" name="password" placeholder="Senha" size="6" class="inputlogin">
+        <button type="submit" class="buttonfinalizar">Finalizar cadastro</button>
     </form>`
     const formcadastro = sectionlogin.querySelector('form')
     formcadastro.addEventListener('submit', function (evento) {
